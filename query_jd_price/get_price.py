@@ -4,7 +4,7 @@ import re
 
 
 def 获取网址():
-    url="https://item.jd.com/100007308631.html/"
+    url="https://item.jd.com/100007308631.html"
     return url
 
 def 获取skuId(url):
@@ -15,8 +15,8 @@ def 获取skuId(url):
     return skuId
     
 def 查询价格(skuId):
-    apiUrl="https://p.3.cn/prices/mgets?"
-    r=requests.get(apiUrl,params={"skuId":skuId})
+    接口地址="https://p.3.cn/prices/mgets?"
+    r=requests.get(接口地址,params={"skuId":skuId})
     print(r.text)
         
 def main():
